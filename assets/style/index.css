@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+:root {
+    --background: rgb(24, 24, 25);
+    --font-color: rgb(255, 255, 255);
+}
+
+.container {
+    width: min(100% - 60px, 1080px);
+    margin-inline: auto;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--font-color);
+}
+
+/*Main*/
+main {
+    height: 100dvh;
+}
+
+.main-box {
+    width: 720px;
+    height: 480px;
+    background-color: rgba(255, 255, 255, 0.068);
+    display: grid;
+    border: 1px solid rgba(255, 255, 255, 0.021);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    transform: scaleY(-1);
+    transform-origin: center;
+}
+
+.square {
+    background-color: #ffffff7a;
+    padding: 20px; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 100xp;
+    font-weight: 400;
+    line-height: 1;
+}
+
+form {
+    margin: 32px 0;
+    width: 720px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0.068);
+    border: 1px solid rgba(255, 255, 255, 0.021);
+    width: 40%;
+    border-radius: 6px;
+    color: #fff;
+    padding: 0 8px;
+}
+
+select option {
+    background-color: rgba(255, 255, 255, 0.068);
+    color: #000000;
+}
+
+button {
+    width: 16%;
+    border-radius: 6px;
+    background-color: #FF7B00;
+    color: #fff;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: #f78d2a;
+}
+
+button:focus {
+    background-color: #da6900;
+}
+
