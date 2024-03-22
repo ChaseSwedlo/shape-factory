@@ -42,11 +42,17 @@ function createNewElement(shapeObject) {
 
 //Create new Shape object and append new div
 function createShape() {
-    let shape = shapeSelect.value;
-    let color = colorSelect.value;
-    shapes.push(new Shape(shape, colorNames[color]));
-    let newShape = createNewElement(shapes[shapes.length-1]);
-    mainBox.appendChild(newShape);
+    if (shapes.length < 24) { //Add limit for when box is full
+        let shape = shapeSelect.value;
+        let color = colorSelect.value;
+        shapes.push(new Shape(shape, colorNames[color]));
+        let newShape = createNewElement(shapes[shapes.length-1]);
+        mainBox.appendChild(newShape);
+    }
+    else {
+        unitInfo.style.visibility = 'visible';
+        unitInfo.innerText = 'Full - Cannot create more shapes'
+    } 
 }
 
 create.addEventListener('click', (event) => {
