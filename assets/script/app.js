@@ -9,7 +9,9 @@ const mainBox = document.querySelector('.main-box');
 const unitInfo = document.querySelector('.shape-info');
 const shapes = [];
 
-//Objects to convet color names to hex and vise versa
+//Objects to convet color names to hex and vise versa.
+//Needed to use these objects to allow getInfo in shape to 
+//return actual names instead of hex codes.
 const colorNames = {
     "09f": "Blue",
     "9f0": "Green",
