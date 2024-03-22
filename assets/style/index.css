@@ -44,9 +44,12 @@ main {
 }
 
 .square {
-    background-color: #ffffff7a;
-    padding: 20px; 
-    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.circle {
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 h1 {
@@ -64,12 +67,18 @@ form {
     gap: 20px;
 }
 
+p {
+    padding-top: 15px;
+    font-weight: 300;
+    visibility: hidden;
+}
+
 select {
     background-color: rgba(255, 255, 255, 0.068);
     border: 1px solid rgba(255, 255, 255, 0.021);
     width: 40%;
     border-radius: 6px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 0 8px;
 }
 
